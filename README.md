@@ -1,5 +1,5 @@
 # moiGanache
-a Dockerized Docker Container
+a Dockerized Ganache-CLI Container
 
 
 # How to Run in Docker-Compose
