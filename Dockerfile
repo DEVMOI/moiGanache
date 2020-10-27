@@ -1,6 +1,5 @@
-FROM node:lts
+FROM node:alpine
 WORKDIR /usr/app
 RUN npm i -g ganache-cli
-COPY . .
 EXPOSE 8545
-ENTRYPOINT [ "moiGanache" ]
+RUN ["ganache-cli","-e 9001","-s devmoi","-h","0.0.0.0"]
