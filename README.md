@@ -20,8 +20,6 @@ services:
     restart: always
     volumes:
       - .:/usr/app
-    environment:
-      MMS: $MMS
     ports:
       - '8545:8545'
 ```
