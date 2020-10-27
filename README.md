@@ -6,7 +6,7 @@ a Dockerized Ganache-CLI Container
 Check [here](https://github.com/trufflesuite/ganache-cli/blob/master/README.md) for more ganache-cli commands
 ```
 docker pull moikapy/moiganache
-docker run moikapy/moiganache ganache-cli -h 0.0.0.0 -q -n -s <seed>
+docker run -p 8545:8545 moikapy/moiganache ganache-cli -h 0.0.0.0 -q -n -s <seed>
 ```
 
 # How to Run in docker-dompose.yml
